@@ -1,0 +1,26 @@
+.hidden {
+  display: none;
+}
+
+#Autocomplete {
+  width: 200px;
+}
+
+#Autocomplete > input {
+  min-width: 100%;
+}
+
+#Autocomplete > .options {
+  border: 1px black solid;
+  width: 100%;
+}
+
+#Autocomplete .listItem {
+  display: list-item;
+  width: 100%;
+  cursor: pointer;
+}
+
+#Autocomplete .listItem:hover {
+  background-color: rgb(211, 211, 211);
+}
