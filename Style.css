@@ -2,25 +2,28 @@
   display: none;
 }
 
-#Autocomplete {
+.autocomplete {
   width: 200px;
+  position: relative;
 }
 
-#Autocomplete > input {
+.autocomplete > input {
   min-width: 100%;
 }
 
-#Autocomplete > .options {
+.autocomplete > .options {
   border: 1px black solid;
   width: 100%;
+  position: absolute;
+  background-color: white;
 }
 
-#Autocomplete .listItem {
+.autocomplete .listItem {
   display: list-item;
   width: 100%;
   cursor: pointer;
 }
 
-#Autocomplete .listItem:hover {
+.autocomplete .listItem:hover {
   background-color: rgb(211, 211, 211);
 }

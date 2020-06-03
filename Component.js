@@ -237,18 +237,22 @@ function start(){
     let choseOption = false;
     let currentString = "";
 
+    let holderElement = document.createElement("div");
+    holderElement.classList.add("autocomplete");
+    htmlElement.appendChild(holderElement);
+
     //initialize element
     let inputElement = document.createElement("input");
     inputElement.setAttribute("type", "text");
     inputElement.addEventListener("input", self.updateString);
     inputElement.value = currentString;
-    htmlElement.appendChild(inputElement);
+    holderElement.appendChild(inputElement);
 
     let optionListElement = document.createElement("div");
     optionListElement.innerText = "";
     optionListElement.classList.add("hidden");
     optionListElement.classList.add("options");
-    htmlElement.appendChild(optionListElement);
+    holderElement.appendChild(optionListElement);
 
     return self;
   }
